@@ -1,0 +1,87 @@
+/* Container for the horizontal cards */
+.card-container {
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  padding: 16px; /* Add some padding to the container */
+}
+
+/* Individual horizontal card */
+.card {
+  width: 300px; /* Set a fixed width for each card */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #fff;
+  margin-right: 16px; /* Add margin to separate cards horizontally */
+  flex: 0 0 auto; /* Prevent card from growing to fill available space */
+}
+
+/* Add a hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add your specific styling for card content (e.g., headings, text, images, etc.) */
+.card h2 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* Style for the unordered list (ul) */
+ul {
+  list-style: none;
+  display: flex; /* Arrange list items horizontally */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  padding: 0; /* Remove default list padding */
+}
+.backdiv {
+  background-color: rgb(155, 155, 155);
+}
+h1 {
+  font-family: 'Roboto', sans-serif; /* Use the imported font */
+  font-weight: 700; /* Set the font weight (e.g., bold) */
+  /* Other styling properties (e.g., font-size, color, etc.) */
+  color: azure;
+}
+/* Basic button styling */
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding to control button size */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Add rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Smooth hover transition */
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Button focus effect */
+.button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on focus */
+}
+
+/* Disable button styling */
+.button:disabled {
+  background-color: #ccc; /* Gray out the button */
+  color: #666; /* Dim the text color */
+  cursor: not-allowed; /* Change cursor to "not allowed" for disabled state */
+}
